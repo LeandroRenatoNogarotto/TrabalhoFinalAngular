@@ -1,0 +1,34 @@
+.section__login{
+    display: flex;
+    height: 100vh;
+}
+
+.section__login__info, .section__login__form{
+    min-width: min-content;
+    width: 50vw;
+    height: 100vh;
+}
+
+.section__login__info__div{
+    position: relative;
+    top: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1{
+    font-size: 4.0rem;
+}
+
+i{
+    font-size: 1.2rem;
+}
+
+.section__login__form__header{
+    padding: 2rem;
+    height: 15%;
+}
+
+.section__login__form__header > a{
+    text-decoration: 0;
+}
