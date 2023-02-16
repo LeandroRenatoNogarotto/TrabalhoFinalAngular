@@ -40,3 +40,21 @@ a:hover{
     cursor: pointer;
     opacity: 0.5;
 }
+
+.desenho{
+    position: absolute;
+    bottom: -7rem;
+    left: -8rem;
+    content: "";
+    width: 20rem;
+    height: 20rem;
+    background-color: #FFC107;
+    border-radius: 100%;
+}
+
+.desenho__2{
+    top: -12rem;
+    left: 24%;
+    opacity: 0.8;
+    z-index: 1;
+}
