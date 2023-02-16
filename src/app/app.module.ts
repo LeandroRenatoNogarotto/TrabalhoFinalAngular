@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardMetaComponent } from './card-meta/card-meta.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -21,9 +23,13 @@ import {MatCardModule} from '@angular/material/card';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressBarModule,
-    MatCardModule
+    MatCardModule,
+    MatIconModule,
+    MatGridListModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

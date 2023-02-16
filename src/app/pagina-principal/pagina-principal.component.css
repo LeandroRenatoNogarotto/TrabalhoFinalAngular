@@ -1,3 +1,4 @@
+
 .example-card {
     align-items: center;
     max-width: 40%;
@@ -5,11 +6,6 @@
   }
 
   .divisão{
-    max-width: 100%;
+    max-width: 95%;
     margin-bottom: 8px;
-  }
-
-  .icone-card{
-    
-
   }
