@@ -14,3 +14,12 @@ input.example-right-align::-webkit-inner-spin-button {
 input.example-right-align {
   -moz-appearance: textfield;
 }
+
+.btn__senha{
+  border: 0;
+}
+
+form{
+  position: relative;
+  top: 10%;
+}

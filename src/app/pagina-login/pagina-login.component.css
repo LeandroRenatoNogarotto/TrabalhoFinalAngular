@@ -32,3 +32,11 @@ i{
 .section__login__form__header > a{
     text-decoration: 0;
 }
+
+a{
+    color: black;
+}
+a:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
