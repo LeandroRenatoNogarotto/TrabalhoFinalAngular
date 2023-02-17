@@ -1,0 +1,16 @@
+<main class="bg-dark text-light">
+    <header>
+        <h1>ALIMENTAÇÃO</h1>
+    </header>
+
+    <section class="container">
+        
+        <section class="row row-cols-4">
+            <app-card-alimentacao class="col mb-4"
+            *ngFor="let item of alimentacao" 
+            [dia]="item.dia"
+            [almoco]="item.almoco" 
+            [janta]="item.janta"></app-card-alimentacao>
+        </section>
+    </section>
+</main>
