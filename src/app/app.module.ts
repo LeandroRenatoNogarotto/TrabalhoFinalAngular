@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
@@ -11,7 +10,6 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { PaginaPessoalComponent } from './pagina-pessoal/pagina-pessoal.component';
 import { PaginaLoginComponent } from './pagina-login/pagina-login.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormLoginComponent } from './form-login/form-login.component';
 import { FormCadastroComponent } from './form-cadastro/form-cadastro.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -23,18 +21,22 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { PaginaAlimentacaoComponent } from './pagina-alimentacao/pagina-alimentacao.component';
 import { CardAlimentacaoComponent } from './card-alimentacao/card-alimentacao.component';
+import { PaginaExercicioComponent } from './pagina-exercicio/pagina-exercicio.component';
+import { PaginaSaudeComponent } from './pagina-saude/pagina-saude.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaginaPrincipalComponent,
     CardMetaComponent,
-    PaginaPessoalComponent
+    PaginaPessoalComponent,
     PaginaLoginComponent,
     FormLoginComponent,
     FormCadastroComponent,
     PaginaAlimentacaoComponent,
-    CardAlimentacaoComponent
+    CardAlimentacaoComponent,
+    PaginaExercicioComponent,
+    PaginaSaudeComponent
   ],
   imports: [
     BrowserModule,
