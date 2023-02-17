@@ -1,0 +1,62 @@
+<form [formGroup]="dataSource" (ngSubmit)="onSubmit(dataSource.value)" class="container text-center">
+  <mat-form-field appearance="outline" class="col-6">
+    <mat-label>Nome</mat-label>
+    <input matInput placeholder="Nome" name="nome" formControlName="nome" required>
+    <mat-icon matSuffix>person</mat-icon>
+  </mat-form-field>
+  <br>
+
+  <div>
+    <mat-form-field appearance="outline" floatLabel="always" class="col-3">
+      <mat-label>Peso</mat-label>
+      <input matInput type="number" class="example-right-align" placeholder="0" name="peso" formControlName="peso" required>
+      <span matTextSuffix class="m-1">Kg</span>
+    </mat-form-field>
+    <mat-form-field appearance="outline" floatLabel="always" class="col-3">
+      <mat-label>Altura</mat-label>
+      <input matInput type="number" class="example-right-align" placeholder="0" name="altura" formControlName="altura" required>
+      <span matTextSuffix class="m-1">M</span>
+    </mat-form-field>
+  </div>
+
+  <mat-form-field appearance="outline" floatLabel="always" class="col-6">
+    <mat-label>Data de nascimento</mat-label>
+    <input matInput type="date" name="nascimento" formControlName="nascimento">
+    <mat-icon matSuffix>today</mat-icon>
+  </mat-form-field>
+
+  <div class="mt-0">
+    <mat-radio-group>
+      <mat-radio-button color="primary" value="masculino" class="col-12 ">Masculino</mat-radio-button>
+      <mat-radio-button color="p" value="feminino" class="col-12 ">Feminino</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <mat-form-field appearance="outline" class="col-6 mt-1">
+    <mat-label>Objetivo</mat-label>
+    <mat-select>
+      <mat-option value="manter">Manter peso</mat-option>
+      <mat-option value="ganho">Ganhar massa</mat-option>
+      <mat-option value="perda">Perder peso</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br>
+
+  <mat-form-field appearance="outline" class="col-6">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="pat@example.com" name="email" formControlName="email" required>
+    <mat-icon matSuffix>email</mat-icon>
+  </mat-form-field>
+
+  <br>
+  <mat-form-field appearance="outline" class="col-6">
+    <mat-label>Digite uma senha</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'" name="senha" formControlName="senha">
+    <button class="btn__senha m-1" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <br>
+  <button type="submit" value="submit" mat-raised-button color="primary" class="col-6">Cadastrar</button>
+</form>
