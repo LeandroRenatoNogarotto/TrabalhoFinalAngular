@@ -8,4 +8,12 @@ import { Component } from '@angular/core';
 export class CardMetaComponent {
     value = 25;
     bufferValue = 100;
+    
+    meta = ` Emagrecer`;
+
+    desc = ` dieta + treino`;
+
+    progresso = ` 30%`;
 }
+
+
