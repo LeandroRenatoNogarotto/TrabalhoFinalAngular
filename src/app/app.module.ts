@@ -14,13 +14,17 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
+import { PaginaAlimentacaoComponent } from './pagina-alimentacao/pagina-alimentacao.component';
+import { CardAlimentacaoComponent } from './card-alimentacao/card-alimentacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PaginaLoginComponent,
     FormLoginComponent,
-    FormCadastroComponent
+    FormCadastroComponent,
+    PaginaAlimentacaoComponent,
+    CardAlimentacaoComponent
   ],
   imports: [
     BrowserModule,
