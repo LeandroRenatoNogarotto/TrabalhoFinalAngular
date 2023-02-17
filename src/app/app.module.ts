@@ -3,6 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CardMetaComponent } from './card-meta/card-meta.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { PaginaPessoalComponent } from './pagina-pessoal/pagina-pessoal.component';
 import { PaginaLoginComponent } from './pagina-login/pagina-login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormLoginComponent } from './form-login/form-login.component';
@@ -20,6 +27,9 @@ import { CardAlimentacaoComponent } from './card-alimentacao/card-alimentacao.co
 @NgModule({
   declarations: [
     AppComponent,
+    PaginaPrincipalComponent,
+    CardMetaComponent,
+    PaginaPessoalComponent
     PaginaLoginComponent,
     FormLoginComponent,
     FormCadastroComponent,
@@ -30,6 +40,9 @@ import { CardAlimentacaoComponent } from './card-alimentacao/card-alimentacao.co
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatProgressBarModule,
+    MatCardModule,
+    MatGridListModule,
     MatFormFieldModule,
     FormsModule,
     ReactiveFormsModule,
@@ -37,9 +50,10 @@ import { CardAlimentacaoComponent } from './card-alimentacao/card-alimentacao.co
     MatSelectModule,
     MatInputModule,
     MatRadioModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
