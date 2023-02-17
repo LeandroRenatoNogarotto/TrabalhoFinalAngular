@@ -7,13 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PaginaPrincipalComponent {
 
-  longText = `Emagrecer`;
-
-  nome = `Leandro`;
-
-  peso = `77 kg`
-
-  altura = `195 cm`
 }
 
 

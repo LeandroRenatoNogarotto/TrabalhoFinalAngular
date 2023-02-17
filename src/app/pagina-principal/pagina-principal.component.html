@@ -1,58 +1,24 @@
-<div>
+<main class="bg-dark">
+  <h1 class="text-white">BETTER HEALTH</h1>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" routerLink="pagina-pessoal">Principal</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="#">Alimentação</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="#">Exercicios</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="#">Saude Mental</a>
+    </li>
+  </ul>
 
-<ul class="nav justify-content-end">
-  <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Atividades</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Definir Metas</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Alimentação</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled">Disabled</a>
-  </li>
-</ul>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
 
-</div>
+</main>
 
-<div>
-   <!-- Cards with media area -->
-<mat-card class="example-card">
-  <mat-card-header>
-    <mat-card-title-group>
-    </mat-card-title-group>
-  </mat-card-header>
 
-  <mat-card-content>
-
-    <mat-icon class="icone-card" aria-hidden="false" aria-label="Example home icon" fontIcon="account_circle"></mat-icon>
-    <p>Nome: {{nome}}</p>
-    <p>Altura: {{altura}}</p>
-    <p>Peso: {{peso}}</p>
-    <p>Mensagem: {{longText}}</p>
-  </mat-card-content>
-</mat-card>
-
-<mat-grid-list cols="2" rowHeight="2:1" class="divisão">
-
-  <mat-grid-tile>
-    <app-card-meta></app-card-meta>
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-            <app-card-meta></app-card-meta>
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-    <app-card-meta></app-card-meta>
-  </mat-grid-tile>
-
-  <mat-grid-tile>
-    <app-card-meta></app-card-meta>
-  </mat-grid-tile>
-  
-</mat-grid-list>
-
-</div>

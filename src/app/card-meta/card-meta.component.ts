@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-meta',
@@ -6,14 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-meta.component.css']
 })
 export class CardMetaComponent {
-    value = 25;
-    bufferValue = 100;
-    
-    meta = ` Emagrecer`;
-
-    desc = ` dieta + treino`;
-
-    progresso = ` 30%`;
+  @Input() desc = 'Calorias diarias';
+  bufferValue = 100;
+  meta = 2000;
+  progresso = 1500;
+  value = (this.progresso*100)/this.meta;
 }
 
 
