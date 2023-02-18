@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pagina-exercicio.component.css']
 })
 export class PaginaExercicioComponent {
-
+  
 }

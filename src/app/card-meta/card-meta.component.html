@@ -1,8 +1,7 @@
 <div class="card-meta">
   <h3><b>{{ desc }}</b></h3>
   <h6>Progresso: {{ progresso }} / {{ meta }}</h6>
-  <mat-progress-bar [value]="value"
-    color="warn"
-    [bufferValue]="bufferValue">
-  </mat-progress-bar>
+  <div class="progress barra col-6" role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar" [ngStyle]="{'width': porcent, 'background-color': tipo}"></div>
+  </div>
 </div>

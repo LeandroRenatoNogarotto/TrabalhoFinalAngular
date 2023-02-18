@@ -7,10 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class CardMetaComponent {
   @Input() desc = 'Calorias diarias';
+  @Input() tipo = '';
   bufferValue = 100;
   meta = 2000;
-  progresso = 1500;
+  progresso = 750;
   value = (this.progresso*100)/this.meta;
+  porcent: string = this.value + '%';
 }
 
 

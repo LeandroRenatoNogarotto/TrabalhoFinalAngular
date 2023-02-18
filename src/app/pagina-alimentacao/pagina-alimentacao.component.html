@@ -1,11 +1,21 @@
 <main class="bg-dark text-light">
-    <header>
-        <h1>ALIMENTAÇÃO</h1>
-    </header>
-
-    <section class="container">
-        
+    <section class="container">        
+        <section class="mb-4">
+            <app-card-meta [desc]="'Calorias diarias'" [tipo]="'#63B83F'"></app-card-meta>
+            <app-card-meta [desc]="'Calorias semanais'" [tipo]="'#63B83F'"></app-card-meta>
+        </section>
         <section class="row row-cols-4">
+            <div class="card col mb-4 text-dark">
+                <h3 class="text-center">Adicionar calorias</h3>
+                <mat-form-field appearance="outline" floatLabel="always">
+                    <input matInput type="number" class="example-right-align" placeholder="0" name="peso" formControlName="peso" required>
+                    <span matTextSuffix class="m-1">kcal</span>
+                </mat-form-field>
+                <button mat-fab extended color="primary">
+                    <mat-icon>add_circle</mat-icon>
+                    Adicionar
+                </button>
+            </div>
             <app-card-alimentacao class="col mb-4"
             *ngFor="let item of alimentacao" 
             [dia]="item.dia"
