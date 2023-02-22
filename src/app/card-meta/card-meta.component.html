@@ -2,6 +2,10 @@
   <h3><b>{{ desc }}</b></h3>
   <h6>Progresso: {{ progresso }} / {{ meta }}</h6>
   <div class="progress barra col-6" role="progressbar" aria-label="Basic example" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar" [ngStyle]="{'width': porcent, 'background-color': tipo}"></div>
+    <div class="progress-bar" [ngStyle]="{'width': porcent, 'background-color': cor}"></div>
   </div>
+</div>
+<div class="input-group mb-3">
+  <input type="number" class="form-control" [(ngModel)]="inputKcal">
+  <button class="btn btn-outline-primary" (click)="atualizaProgresso(inputKcal)">Adicionar</button>
 </div>

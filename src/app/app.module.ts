@@ -36,7 +36,7 @@ import { PaginaSaudeComponent } from './pagina-saude/pagina-saude.component';
     PaginaAlimentacaoComponent,
     CardAlimentacaoComponent,
     PaginaExercicioComponent,
-    PaginaSaudeComponent
+    PaginaSaudeComponent,
   ],
   imports: [
     BrowserModule,
